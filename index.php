@@ -12,7 +12,6 @@
     <header class="row blue darken-2">
         <div class="col s12 center">
             <h3 class="white-text">Статьи и новости нашего города</h3>
-            
         </div>
     </header>
 </div>
