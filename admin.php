@@ -1,6 +1,3 @@
-<?php include_once "functions.php"?>
-<?php include_once "config.php"?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,11 +9,12 @@
 </head>
 <body>
 <div class="container">
-    <?php renderTitle("Статьи и новости нашего города") ?>
-    <?php $articles = getArticles();
-        while ($row = $articles->fetch_assoc()) {
-            echo renderArticles($row['title'], $row['text'], $row['author'], $row['date']);
-    }?>
+    <header class="row blue darken-2">
+        <div class="col s12 center">
+            <h3 class="white-text">Статьи и новости нашего города </h3>
+            <h6 class="white-text"><?php include "config.php" ?></h6>
+</div>
+</header>
 </div>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
